@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Recipe</string>
+    <string name="title_all_dishes">All Dishes</string>
+    <string name="title_fav_dishes">Fav Dishes</string>
+    <string name="title_random_dishes">Random Dishes</string>
+    <string name="splash_screen_title">Recipe</string>
+    <string name="add_dish">Add Dish</string>
+    <string name="ibl_title">Title</string>
+    <string name="ibl_type">Type</string>
+    <string name="ibl_category">Category</string>
+    <string name="ibl_ingredients">Ingredients</string>
+    <string name="ibl_cooking_time_in_minutes">Cooking time in minutes</string>
+    <string name="ibl_cooking_instructions">Cooking instructions</string>
+    <string name="save_dish">Save Dish</string>
+    <string name="select_image_action">Select Image Action</string>
+    <string name="ibl_camera">Camera</string>
+    <string name="ibl_gallery">Gallery</string>
+
+    <string name="title_select_dish_type">Select Dish Type</string>
+    <string name="title_select_dish_category">Select Dish Category</string>
+    <string name="title_select_dish_cooking_time">Dish Cooking time in Minutes</string>
+    <string name="err_string_empty_image">Image Empty</string>
+    <string name="err_string_empty_title">Title Empty</string>
+    <string name="err_string_empty_category">Category Empty</string>
+    <string name="err_string_empty_Ingredients">Ingredients Empty</string>
+    <string name="err_string_empty_cooking_time">Cooking Time Empty</string>
+    <string name="err_string_empty_cooking_instructions">Cooking Instructions Empty</string>
+    <string name="err_string_empty_type">Type is empty</string>
+    <string name="label_no_dishes_added_yet">No Dishes Added Yet</string>
+    <string name="cd_dish_image">Dish Image</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_dish_details">Dish Details</string>
+    <string name="lbl_title">Title</string>
+    <string name="lbl_type">Type</string>
+    <string name="lbl_category">Category</string>
+    <string name="lbl_ingredients">Ingredients</string>
+    <string name="lbl_cooking_time">Cooking time</string>
+    <string name="lbl_cooking_instructions">Cooking Instructions</string>
+    <string name="msg_added_fav">Added To favorite</string>
+    <string name="msg_rem_fav">Removed From favorite</string>
+    <string name="err_no_fav_dish_available">No Fav Dish Available</string>
+    <string name="cd_more_options">More Options</string>
+    <string name="title_delete_dish">Delete Dish</string>
+    <string name="title_edit_dish">Edit Dish</string>
+    <string name="title_update_dish">Update Dish</string>
+    <string name="message_delete_dish">Do you really want to delete?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
+    <string name="message_dish_deleted">Dish deleted</string>
+    <string name="lbl_filter_dish">Filter Dish</string>
+    <string name="title_select_item_to_filter">Select Item to Filter</string>
+    <string name="msg_please_wait">Please Wait</string>
+</resources>

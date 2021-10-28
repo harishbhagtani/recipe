@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.DishDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_details_dish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_detail_image"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="250dp"
+                android:contentDescription="@string/cd_dish_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_title"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_detail_image" />
+
+            <TextView
+                android:id="@+id/tv_detail_title_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Title Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_title" />
+
+            <TextView
+                android:id="@+id/tv_detail_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_type"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_title_value" />
+
+            <TextView
+                android:id="@+id/tv_detail_type_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Type Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_type" />
+
+            <TextView
+                android:id="@+id/tv_detail_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_category"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_category"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_type_value" />
+
+            <TextView
+                android:id="@+id/tv_detail_category_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Category Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_category" />
+
+            <TextView
+                android:id="@+id/tv_detail_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_ingredients"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_ingredients"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_category_value" />
+
+            <TextView
+                android:id="@+id/tv_detail_ingredients_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Ingredients Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_ingredients" />
+
+            <TextView
+                android:id="@+id/tv_detail_cooking_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_cooking_time"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_cooking_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_ingredients_value" />
+
+            <TextView
+                android:id="@+id/tv_detail_cooking_time_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Cooking Time Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_cooking_time" />
+
+            <TextView
+                android:id="@+id/tv_detail_cooking_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_cooking_instructions"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/lbl_cooking_instructions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_cooking_time_value" />
+
+            <TextView
+                android:id="@+id/tv_detail_cooking_instructions_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Cooking Insructions Value"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_cooking_instructions" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_cooking_instructions_value"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:src="@drawable/ic_favorite_not_set" />
+</FrameLayout>

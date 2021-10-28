@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_all_dishes">
+
+    <fragment
+        android:id="@+id/navigation_all_dishes"
+        android:name="com.harishbhagtani.recipe.view.fragments.AllDishesFragment"
+        android:label="@string/title_all_dishes"
+        tools:layout="@layout/fragment_all_dishes" >
+        <action
+            android:id="@+id/action_navigation_all_dishes_to_navigation_dish_details"
+            app:destination="@id/navigation_dish_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fav_dishes"
+        android:name="com.harishbhagtani.recipe.view.fragments.FavDishesFragment"
+        android:label="@string/title_fav_dishes"
+        tools:layout="@layout/fragment_fav_dishes" >
+        <action
+            android:id="@+id/action_navigation_fav_dishes_to_navigation_dish_details"
+            app:destination="@id/navigation_dish_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_random_dishes"
+        android:name="com.harishbhagtani.recipe.view.fragments.RandomDIshesFragment"
+        android:label="@string/title_random_dishes"
+        tools:layout="@layout/fragment_random_dishes" />
+
+    <fragment
+        android:id="@+id/navigation_dish_details"
+        android:name="com.harishbhagtani.recipe.view.fragments.DishDetailsFragment"
+        android:label="@string/title_dish_details"
+        tools:layout="@layout/fragment_dish_details"
+        >
+
+        <argument
+            android:name="dishDetails"
+            app:argType="com.harishbhagtani.recipe.model.entities.FavDish"
+            />
+
+    </fragment>
+</navigation>
